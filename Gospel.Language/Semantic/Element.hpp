@@ -13,13 +13,13 @@ namespace Gospel::Language::Semantic
     {
     public:
         /// The namespace where this element is declared.
-        Namespace* DeclaredNamespace;
+		Namespace* const DeclaredNamespace;
 
         /// The visibility of this type.
         Visibility Visibility {Visibility::Private};
 
         /// The name of this element.
-        const std::string Name;
+        std::string const Name;
 
         explicit Element(std::string name, class Namespace* space) :
                 Name(std::move(name)), DeclaredNamespace(space)

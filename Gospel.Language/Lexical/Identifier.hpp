@@ -2,7 +2,7 @@
 
 #include "Token.hpp"
 
-namespace Gospel::Language
+namespace Gospel::Language::Lexical
 {
     class Identifier : public Token
     {

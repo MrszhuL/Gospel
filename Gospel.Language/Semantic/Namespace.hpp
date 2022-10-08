@@ -74,10 +74,13 @@ namespace Gospel::Language::Semantic
          */
         Type& GetType(const std::string& name, bool recursively = true) noexcept(false);
 
+        /// Add a sub namespace to this namespace.
         Namespace& AddNamespace(const std::string& name) noexcept(false);
 
+        /// Get the sub namespace with the specified name from this namespace.
         Namespace& GetNamespace(const std::string& name) noexcept(false);
 
+        /// Check whether this namespcaec has a sub namespace with the specified name.
         bool HasNamespace(const std::string& name);
 
         /// Get or create a sub namespace.

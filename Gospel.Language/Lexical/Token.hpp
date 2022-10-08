@@ -1,6 +1,6 @@
 #pragma once
 
-namespace Gospel::Language
+namespace Gospel::Language::Lexical
 {
     class Token
     {

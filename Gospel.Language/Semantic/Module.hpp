@@ -12,6 +12,7 @@ namespace Gospel::Language::Semantic
     class Module : Namespace
     {
     public:
-
+		explicit Module(std::string name) : Namespace(name, this, nullptr)
+		{}
     };
 }
