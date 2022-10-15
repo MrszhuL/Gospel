@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.22)
+
+file(GLOB_RECURSE TARGET_SOURCE *.cpp)
+file(GLOB_RECURSE TARGET_HEADER *.hpp)
+
+set(TARGET_NAME "Gospel.Compiler")
+set(CMAKE_CXX_STANDARD 20)
+
+#add_library(${TARGET_NAME} STATIC ${TARGET_HEADER} ${TARGET_SOURCE})
+
+add_executable(${TARGET_NAME} ${TARGET_HEADER} ${TARGET_SOURCE})
